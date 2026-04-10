@@ -4,12 +4,14 @@
  */
 function toggleBio(bioId) {
     const bio = document.getElementById(bioId);
+    const card = bio.parentElement;
+    const photos = card.querySelector(".extra-photos");
+    const links = card.querySelector(".bio-links");
     // Toggle between showing and hiding the bio section
-    if (bio.style.display === "none" || bio.style.display === "") {
-        bio.style.display = "block";
-    } else {
-        bio.style.display = "none";
-    }
+    const isVisible = bio.style.display === "block";
+    bio.style.display = isVisible ? "none" : "block";
+    photos.style.display = isVisible ? "none" : "flex";
+    links.style.display = isVisible ? "none" : "block";
 }
 
 /**
