@@ -110,9 +110,15 @@ button:hover {
 .extra-photos img {
     width: 125px;
     height: 125px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     border: 2px solid #ddd;
+}
+
+/* Show full logo-style moodboard images without cropping (e.g. Docker / Linux / Arduino) */
+.extra-photos-fit-contain img {
+    object-fit: contain;
 }
 
 .bio-links {
