@@ -7,11 +7,18 @@ function toggleBio(bioId) {
     const card = bio.parentElement;
     const photos = card.querySelector(".extra-photos");
     const links = card.querySelector(".bio-links");
-    // Toggle between showing and hiding the bio section
     const isVisible = bio.style.display === "block";
+
     bio.style.display = isVisible ? "none" : "block";
-    photos.style.display = isVisible ? "none" : "flex";
-    links.style.display = isVisible ? "none" : "block";
+
+    if (photos) {
+        const isGrid = photos.id === "leeanna-moodboard";
+        photos.style.display = isVisible ? "none" : (isGrid ? "grid" : "flex");
+    }
+    if (links) {
+        const isFlex = links.id === "leeanna-links";
+        links.style.display = isVisible ? "none" : (isFlex ? "flex" : "block");
+    }
 }
 
 /**
