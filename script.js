@@ -6,12 +6,17 @@ function toggleBio(bioId) {
     const bio = document.getElementById(bioId);
     const card = bio.parentElement;
     const photos = card.querySelector(".extra-photos");
-    const links = card.querySelector(".bio-links");
-    // Toggle between showing and hiding the bio section
+    const links = card.querySelector(".member-links");
     const isVisible = bio.style.display === "block";
+
     bio.style.display = isVisible ? "none" : "block";
-    photos.style.display = isVisible ? "none" : "flex";
-    links.style.display = isVisible ? "none" : "block";
+
+    if (photos) {
+        photos.style.display = isVisible ? "none" : "grid";
+    }
+    if (links) {
+        links.style.display = isVisible ? "none" : "flex";
+    }
 }
 
 /**
@@ -22,13 +27,10 @@ function showSection(sectionId) {
     const biosSection = document.getElementById("bios");
     const visionSection = document.getElementById("vision");
 
-    // Display the bios section and hide the vision section
     if (sectionId === "bios") {
         biosSection.style.display = "flex";
         visionSection.style.display = "none";
-    }
-    // Display the vision section and hide the bios section
-    else if (sectionId === "vision") {
+    } else if (sectionId === "vision") {
         biosSection.style.display = "none";
         visionSection.style.display = "block";
     }

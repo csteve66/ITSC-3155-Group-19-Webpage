@@ -15,68 +15,106 @@
     <p class="team-subheading">Meet our team</p>
     <h1 class="team-brand">FOUNDATION</h1>
     <img src="img/team_logo.webp" alt="FOUNDATION team logo" class="team-logo">
-
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
+
+    <!-- Chase Stevens -->
     <div class="card">
         <img src="img/chase_stevens_photo.png" alt="Chase Stevens photo" class="profile-pic">
         <h2>Chase Stevens</h2>
+        <p>UNCC - System and Networks</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio">Chase is a low level engineer who specializes in C and STM32 Hardware.</p>
-        <ul class="bio-links">
-            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-            <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-        </ul>
-        <div class="extra-photos extra-photos-fit-contain">
-            <img src="img/docker.jpg" alt="docker">
-            <img src="img/linux.jpg" alt="linux">
-            <img src="img/arduino.png" alt="arduino">
+        <div class="member-links" id="links1">
+            <a href="https://www.w3schools.com/" target="_blank" class="bio-link-btn">W3Schools</a>
+            <a href="https://linkedin.com/" target="_blank" class="bio-link-btn">LinkedIn</a>
+            <a href="https://stackoverflow.com/" target="_blank" class="bio-link-btn">Stack Overflow</a>
+        </div>
+        <div class="extra-photos" id="photos1">
+            <div class="mood-tile">
+                <img src="img/docker.jpg" alt="Docker" class="mood-icon-img">
+                <div class="mood-label">Docker</div>
+                <div class="mood-sub">Containerization</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/linux.jpg" alt="Linux" class="mood-icon-img">
+                <div class="mood-label">Linux</div>
+                <div class="mood-sub">Primary OS</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/arduino.png" alt="Arduino" class="mood-icon-img">
+                <div class="mood-label">Arduino</div>
+                <div class="mood-sub">Hardware Projects</div>
+            </div>
         </div>
     </div>
+
+    <!-- Emmanuel Owusu -->
     <div class="card">
         <img src="img/emmanuel_profile_photo.JPG" alt="Emmanuel Owusu photo" class="profile-pic">
         <h2>Emmanuel Owusu</h2>
+        <p>UNCC - Information Technology</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Emmanuel is interested in building iOS apps and getting more comfortable with Swift and Xcode and also focused on working with Data, from analysis to the Engineering.</p>
-        <ul class="bio-links">
-            <li><a href="https://developer.apple.com/documentation/" target="_blank">Apple Documentation</a></li>
-            <li><a href="https://www.linkedin.com/in/eowusu1/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-        </ul>
-        <div class="extra-photos">
-            <img src="img/emmanuel-moodboard-xcode.jpg" alt="Xcode and Apple Developer">
-            <img src="img/emmanuel-moodboard-sql.jpg" alt="SQL and databases">
-            <img src="img/emmanuel-moodboard-data.jpg" alt="Data analytics and engineering">
+        <div class="member-links" id="links2">
+            <a href="https://developer.apple.com/documentation/" target="_blank" class="bio-link-btn">Apple Documentation</a>
+            <a href="https://www.linkedin.com/in/eowusu1/" target="_blank" class="bio-link-btn">LinkedIn</a>
+            <a href="https://www.w3schools.com/" target="_blank" class="bio-link-btn">W3Schools</a>
+        </div>
+        <div class="extra-photos" id="photos2">
+            <div class="mood-tile">
+                <img src="img/emmanuel-moodboard-xcode.jpg" alt="Docker" class="mood-icon-img">
+                <div class="mood-label">Apple Developer</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/emmanuel-moodboard-sql.jpg" alt="Docker" class="mood-icon-img">
+                <div class="mood-label">SQL</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/emmanuel-moodboard-data.jpg" alt="Docker" class="mood-icon-img">
+                <div class="mood-label">Data</div>
+            </div>
         </div>
     </div>
+
+    <!-- Alexandria Watson -->
     <div class="card">
         <img src="img/team-logo.png" alt="Alexandria Watson photo" class="profile-pic">
         <h2>Alexandria Watson</h2>
+        <p>UNCC [Grad Class] - [Concentration]</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Name is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        <ul class="bio-links">
-            <li><a href="https:link.com/" target="_blank">Link1</a></li>
-            <li><a href="https:link.com/" target="_blank">Link2</a></li>
-            <li><a href="https:link.com/" target="_blank">Link3</a></li>
-        </ul>
-        <div class="extra-photos">
-            <img src="img/photo1.jpg" alt="photo">
-            <img src="img/photo2.jpg" alt="photo">
-            <img src="img/photo3.jpg" alt="photo">
+        <p id="bio3" class="bio">Alexandria is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <div class="member-links" id="links3">
+            <a href="https://link.com/" target="_blank" class="bio-link-btn">Link1</a>
+            <a href="https://link.com/" target="_blank" class="bio-link-btn">Link2</a>
+            <a href="https://link.com/" target="_blank" class="bio-link-btn">Link3</a>
+        </div>
+        <div class="extra-photos" id="photos3">
+            <div class="mood-tile">
+                <div class="mood-label">Photo 1</div>
+                <div class="mood-sub">Coming soon</div>
+            </div>
+            <div class="mood-tile">
+                <div class="mood-label">Photo 2</div>
+                <div class="mood-sub">Coming soon</div>
+            </div>
+            <div class="mood-tile">
+                <div class="mood-label">Photo 3</div>
+                <div class="mood-sub">Coming soon</div>
+            </div>
         </div>
     </div>
+
+    <!-- Gracie Vaughn -->
     <div class="card">
         <img src="img/gracie_vaughn_photo.JPG" alt="Gracie Vaughn photo" class="profile-pic">
         <h2>Gracie Vaughn</h2>
+        <p>UNCC [Grad Class] - [Concentration]</p>
         <button onclick="toggleBio('bio4')">Show Bio</button>
         <p id="bio4" class="bio">Gracie is a game designer who specializes in graphics and animation. She is skilled in software such as Unity, Maya, and Blender. </p>
         <ul class="bio-links">
@@ -89,34 +127,47 @@
             <img src="img/gracie_moodboard3.png" alt="photo">
         </div>
     </div>
+
+    <!-- Leeanna Coleman -->
     <div class="card">
-        <img src="img/team-logo.png" alt="Leeanna Coleman photo" class="profile-pic">
+        <img src="img/leeanna_coleman_image.jpg" alt="Leeanna Coleman photo" class="profile-pic">
         <h2>Leeanna Coleman</h2>
+        <p>UNCC '27 - AI, Robotics, & Gaming</p>
         <button onclick="toggleBio('bio5')">Show Bio</button>
-        <p id="bio5" class="bio">Name is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        <ul class="bio-links">
-            <li><a href="https:link.com/" target="_blank">Link1</a></li>
-            <li><a href="https:link.com/" target="_blank">Link2</a></li>
-            <li><a href="https:link.com/" target="_blank">Link3</a></li>
-        </ul>
-        <div class="extra-photos">
-            <img src="img/photo1.jpg" alt="photo">
-            <img src="img/photo2.jpg" alt="photo">
-            <img src="img/photo3.jpg" alt="photo">
+        <p id="bio5" class="bio">Leeanna is a junior with a passion for AI, robotics, and autonomous vehicle technology. She is driven by a curiosity for how intelligent systems interact with the physical world, and is eager to apply her skills to the future of self-driving vehicles and robotics!</p>
+        <div class="member-links" id="links5">
+            <a href="https://github.com/leeannakathrine12" target="_blank" class="bio-link-btn">GitHub</a>
+            <a href="https://www.nasa.gov/reference/jsc-rovers/" target="_blank" class="bio-link-btn">Nasa Rovers</a>
+            <a href="https://www.ros.org" target="_blank" class="bio-link-btn">ROS Docs</a>
+        </div>
+        <div class="extra-photos" id="photos5">
+            <div class="mood-tile">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="mood-icon-img">
+                <div class="mood-label">Python</div>
+                <div class="mood-sub">AI/ML Projects</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/linux.png" alt="Linux" class="mood-icon-img">
+                <div class="mood-label">Linux</div>
+                <div class="mood-sub">Common OS for robotics</div>
+            </div>
+            <div class="mood-tile">
+                <img src="img/C++_logo.png" alt="C++" class="mood-icon-img">
+                <div class="mood-label">C++</div>
+                <div class="mood-sub">On Board Vehicle Software</div>
+            </div>
         </div>
     </div>
+
 </div>
 
-<!-- Team vision / mission (hidden by default) -->
-<div id="vision" class="container vision-panel" style="display: none;">
-    <article class="vision-charter">
-        <p class="vision-eyebrow">Team vision</p>
-        <h2>Our mission statement</h2>
-        <p class="vision-prose">We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
-    </article>
+<!-- Team vision section -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
 </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+<script src="script.js"></script>
 
 </body>
 </html>
