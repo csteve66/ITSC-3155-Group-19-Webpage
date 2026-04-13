@@ -12,11 +12,11 @@ function toggleBio(bioId) {
     bio.style.display = isVisible ? "none" : "block";
 
     if (photos) {
-        const isGrid = photos.id === "leeanna-moodboard";
+        const isGrid = photos.id === "moodboard";
         photos.style.display = isVisible ? "none" : (isGrid ? "grid" : "flex");
     }
     if (links) {
-        const isFlex = links.id === "leeanna-links";
+        const isFlex = links.id === "member-links";
         links.style.display = isVisible ? "none" : (isFlex ? "flex" : "block");
     }
 }
